@@ -1,0 +1,282 @@
+body{
+	font-family: 'robot', sans-serif ;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;/*o elemento nao perde seu ponto inicial dentro do conteiner*/
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;/*Deixxa o elemento solto pelo site mudando o seu ponto inicial*/
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;/*Serve para os elementos ficarem lateralmente um do lado do outro e se comportar como um bloco aonde podemos escoler o local aonde ficara*/
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+/*Serve para aplicar estilo quando clicarmos nos elementos*/
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("img/bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main {
+
+}
+
+.main-formulario{
+	width: 940px; /*tamanho referente para centralizar*/
+	margin: 0 auto; /*tamanho referente para centralizar*/
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+/*css da página inicial*/
+
+.banner{
+	width: 100%;
+
+}
+
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;/*sempre que usarmos essa medida em ela multiplica pelo tamanho base da fonte em que é  em px*/
+	margin: 0 0 1em 0;
+	clear: left; /*Serve para limpar as alterações feitas pelo float no restante do site*/ 
+}
+
+.principal{
+	padding: 3em 0; /*Criei um espaçamento em no caso proporcional ao tamanho da fonte*/
+	background: #FEFEFE;
+	width: 940px; /*tamanho referente para centralizar*/
+	margin: 0 auto; /*tamanho referente para centralizar*/
+}
+
+.principal p{
+	margin: 0 0 1em 0;
+}
+
+.principal strong{
+	font-weight: bold;
+}
+
+.principal em{
+	font-style: italic;
+}
+
+.utensilios{
+	width: 120px;
+	float: left; /*O elemento flutuante descola do ponto inicial mas sua sombra continua ocupando seu espaço inicial então os elementos ficam a sua volta*/
+	margin: 0 20px 20px 0 ; /*cima direita baixo esquerda*/
+}
+
+.mapa{
+	padding: 3em 0;/*Criei um espaçamento em no caso proporcional ao tamanho da fonte*/
+	background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa-conteudo{
+	width: 940px; /*tamanho referente para centralizar*/
+	margin: 0 auto; /*tamanho referente para centralizar*/
+}
+
+.mapa p {
+	margin: 0 0 2em 0 ;
+	text-align: center;
+}
+
+.beneficios{
+	padding: 3em 0; /*Criei um espaçamento em no caso proporcional ao tamanho da fonte*/
+	background: #888888;
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top; /*Para ficar alinhado pela parte superior do container*/
+}
+
+.itens{
+	line-height: 1.5 ;/*Altura da linha*/
+
+}
+
+/*Foi utilizado uma pseudo class para se referir ao item da lista que desejarmos ou podemos também utilizarmos 
+o :first-child para nos referirmos ao primeiro item especificamente (primeiro irmão)*/
+.itens:nth-child(1){
+	font-weight: bold;
+}
+
+/*Fazemos uso do before juntamente com o parametro content "" para aplicar alguma estilização antes do elemento*/
+.itens:before{
+	content: "★";
+}
+
+.imagem-beneficios{
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px #000000; 
+}
+
+.imagem-beneficios:hover{
+	opacity: 0.3;
+}
+
+
+.video{
+	width: 560px;
+	margin: 2em auto;/*Centralizou o video*/
+} 
+
+/*Responsividade*/
+
+@media screen and (max-width: 480px){
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios{
+		width: 100%;
+	}
+}
