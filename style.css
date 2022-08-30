@@ -279,4 +279,24 @@ o :first-child para nos referirmos ao primeiro item especificamente (primeiro ir
 	.lista-beneficios, .imagem-beneficios{
 		width: 100%;
 	}
+	.main-formulario{
+		width: auto;
+	}
+	.input-padrao{
+		margin: 0 0 5em 0.5em;
+		width: 85%;
+	}
+	.enviar{
+		margin: 0 0 0 25%;
+	}
+	.produtos{
+		width: auto;
+	}
+	.produtos li{
+		width: 75%;
+		margin: 0 0 0 3em;
+	}
+	table{
+		margin: -2em 0 0 23%;
+	}
 }
